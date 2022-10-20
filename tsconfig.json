@@ -16,12 +16,14 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      // add your aliases here
       "@/pages/*": ["pages/*"],
       "@/src/*": ["src/*"],
-      "@/components/*": ["src/components/*"]
+      "@/components/*": ["src/components/*"],
+      "@/modules/*": ["src/modules/*"],
+      "@/utils/*": ["src/utils/*"],
+      "@/types/*": ["src/types/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
