@@ -1,21 +1,42 @@
-# Rangka
+# Tiptip Technical Test
+This app is built for Tiptip Technical Test
 
-Rangka is a [Next.js](https://nextjs.org/) repository bootstrapped with battery pack included 🔋
+This project was bootstrapped from [Rangka](https://github.com/santosidauruk/rangka).
 
-## Battery Pack Included
-- Eslint and Prettier to find, fix and format your code
-- Unit test configuration using jest and react-testing-library
-- Husky and Lint-staged to ensure your code is checked before they are commited
-- Conventional Commitlint to check your commit-message follow the same convention
-- Module path aliases to simplify the way you import your modules
+# Tech Stack
+1. Next.js
+2. Typescript
+3. Material-UI
+4. Zustand
+5. SWR
 
-## Reference
-1. [Next.js](https://nextjs.org/)
-2. [Eslint](https://eslint.org/)
-3. [Prettier](https://prettier.io/)
-4. [Jest](https://jestjs.io/)
-5. [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-6. [Husky](https://typicode.github.io/husky/#/)
-7. [Lint-staged](https://github.com/okonet/lint-staged#readme)
-8. [Commitlint](https://commitlint.js.org/#/)
-9. [Conventional-commit](https://www.conventionalcommits.org/en/v1.0.0/)
+
+## Environment Setup
+
+This repo is using environment variable by using `.env` file.
+Currently we just have 1 variable i.e `NEXT_PUBLIC_HOST_URL=https://api.jikan.moe/v4`
+
+## How to Run
+Make sure you installed the packages
+- Run `yarn` to installed packages
+- Run `yarn dev` to run development server and go to `http://localhost:3000` to view it
+- Run `yarn build` to build the app into production mode
+
+
+## Directory Structure
+```
+  ├── public                    # any static file
+  └── src
+      ├── pages                 # routing
+      ├── modules               # feature and parts that spesific for feature
+          ├── components
+          ├── hooks
+          └── test               
+      ├── components            # shared component
+      ├── utils                 # shared libs
+      └── styles                # global styles
+```
+
+## Deployment
+
+This repo is deployed using [vercel](https://vercel.com/). You can see the deployed app [here](https://tiptip-technical-test-santosidauruk.vercel.app/)
